@@ -1,0 +1,11 @@
+{
+  "path": "/eom-software/eomtbx",
+  "title": "EOMasters Toolbox",
+  "description": "",
+  "date": "",
+  "modified": "",
+  "image": "",
+  "html": "<h1>EOMasters Toolbox</h1>\n<p>The EOMasters Toolbox brings new features and new scientific tools to SNAP.</p>\n<img id=\"img_comp-lyfucnc26\" src=\"/assets/0694a47ed6688265650c.webp\" alt=\"eomtbx_logo_500.png\" loading=\"lazy\" decoding=\"async\">\n<h2>One toolbox. Free for everyone.</h2><p>Since version 2.0, all former Pro features are included in a single, free EOMasters Toolbox. <a href=\"/post/there-can-only-be-one/\">Read about the release</a>.</p><h2>Python Editor</h2><p>PyEditor lets you edit and execute Python code directly in SNAP. It lowers the barrier to developing scientific code and is ready when you need it.</p><img src=\"/assets/ae30a4787aa28275efad.webp\" alt=\"Python Editor in SNAP\" loading=\"lazy\"><h2>Super-resolve Sentinel-2 images</h2><p>Increase the resolution of 10- and 20-metre bands to 5 metres, with the option to resample 60-metre bands using bicubic interpolation.</p><figure class=\"image-comparison\" id=\"sentinel-comparison\"><div class=\"juxtapose\" data-startingposition=\"50%\" data-showlabels=\"true\" data-showcredits=\"false\"><img src=\"/assets/sentinel-2-10m.png\" alt=\"Original Sentinel-2 image at 10-metre resolution\" data-label=\"10m Sentinel-2 Image\" width=\"666\" height=\"499\"><img src=\"/assets/sentinel-2-5m.png\" alt=\"The same Sentinel-2 scene super-resolved to 5 metres\" data-label=\"5m Sentinel-2 Image\" width=\"666\" height=\"499\"></div><figcaption>Drag the divider or use the arrow keys to compare 10 m and 5 m imagery.</figcaption></figure><h2>Source Code &amp; Feedback</h2>\n<p>You can install the EOMTBX via SNAP's Plugin Manager.</p>\n\n<p>SNAP is available at the&nbsp;<a href=\"https://step.esa.int/main/download/snap-download/\">ESA STEP website</a>.</p>\n<p>The EOMasters Toolbox is open source and can be found on&nbsp;<a href=\"https://github.com/eomasters-repos/eomtbx\">GitHub.&nbsp;</a><br>\nIf you find issues or have suggestions for improvements and extensions, please use the&nbsp;<a href=\"https://github.com/eomasters-repos/eomtbx/issues\">issue tracker on GitHub</a>.</p>",
+  "categories": [],
+  "source": "https://www.eomasters.org/eom-software/eomtbx"
+}

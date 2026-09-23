@@ -1,0 +1,11 @@
+{
+  "path": "/about",
+  "title": "About",
+  "description": "",
+  "date": "",
+  "modified": "",
+  "image": "",
+  "html": "<h1>About</h1>\n<p>EOMasters is run by me, Marco Peters, I've introduced my self in the&nbsp;<a href=\"/post/hello-eo-masters\">Hello EO-Masters!</a>&nbsp;blog-post. In short I'm a software developer and working more than 20 years in the Earth observation domain.</p>\n\n<p><br>\nEOMasters provides a place where the EO-Community can meet, exchange their wisdom, and help each other. Hence the name. It is a place for the masters of the Earth observation, but also for those who want to become one.</p>\n\n\n<img id=\"img_comp-ljwjbaog\" src=\"/assets/3fa05055b58cb677d0ed.webp\" alt=\"\" loading=\"lazy\" decoding=\"async\">\n<p>Free and paid tutorials on software use and development will be offered in the near future. Also on-site or remote trainings can be booked. Software modules will also be made available to facilitate the daily work of an EO-Master. If you are interested in custom software, please contact me. We will find a solution.</p>",
+  "categories": [],
+  "source": "https://www.eomasters.org/about"
+}

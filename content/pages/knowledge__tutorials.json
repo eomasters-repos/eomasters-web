@@ -1,0 +1,11 @@
+{
+  "path": "/knowledge/tutorials",
+  "title": "Tutorials",
+  "description": "",
+  "date": "",
+  "modified": "",
+  "image": "",
+  "html": "<img id=\"img_comp-lo4ax0ag\" src=\"/assets/19b7059429019051a001.webp\" alt=\"Tutorials_1000.webp\" loading=\"lazy\" decoding=\"async\">\n<h1>Tutorials</h1>\n<p>Tutorials are usually provided as YouTube videos and documents. They cover the usage of applications, software development and Earth observation in general.</p>\n<img id=\"img_comp-lnzy5a4m2\" src=\"/assets/207ad57bebf5e846b141.webp\" alt=\"EOM_Tutorial.png\" loading=\"lazy\" decoding=\"async\">\n<h2>Video Tutorials</h2>\n<p>This is your Project description. Provide a brief summary to help visitors understand the context and background of your work. Click on \"Edit Text\" or double click on the text box to start.</p>\n<a href=\"https://www.youtube.com/playlist?list=PLS_xBjOThHFWd8Rq8bn-F1d6pKYqTiQH3\"><img id=\"img_comp-lo4bspmg\" src=\"/assets/1c4c2af34e4a20da4775.webp\" alt=\"\" loading=\"lazy\" decoding=\"async\"></a>\n<p><a href=\"https://www.youtube.com/playlist?list=PLS_xBjOThHFWd8Rq8bn-F1d6pKYqTiQH3\">See on YouTube</a></p>\n<h2>Mini Tutorials</h2>\n<p>In this series of short video tutorials, topics of the Earth observation are quickly explained. For the knowledge snack in between.</p>\n<a href=\"https://www.youtube.com/playlist?list=PLS_xBjOThHFUWQnaTBi95ajrqlZRgluUz\"><img id=\"img_comp-lo4bpd0g\" src=\"/assets/1c4c2af34e4a20da4775.webp\" alt=\"\" loading=\"lazy\" decoding=\"async\"></a>\n<p><a href=\"https://www.youtube.com/playlist?list=PLS_xBjOThHFUWQnaTBi95ajrqlZRgluUz\">See on YouTube</a></p>\n<img id=\"img_comp-lnzy5a4t\" src=\"/assets/c56793a0027864cad321.webp\" alt=\"EOM_Mini.png\" loading=\"lazy\" decoding=\"async\">",
+  "categories": [],
+  "source": "https://www.eomasters.org/knowledge/tutorials"
+}

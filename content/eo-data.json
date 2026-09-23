@@ -1,0 +1,1122 @@
+[
+  {
+    "name": "AMSU",
+    "sensor": [
+      "Radio"
+    ],
+    "description": "The Advanced Microwave Sounding Unit-A (AMSU-A) is a 15-channel microwave sounder designed primarily to obtain temperature profiles in the upper atmosphere.",
+    "platform": [
+      "NOAA"
+    ],
+    "theme": [
+      "Atmosphere"
+    ],
+    "active": true,
+    "sources": [
+      {
+        "name": "Earthdata Search",
+        "url": "https://search.earthdata.nasa.gov/",
+        "free": true,
+        "apply": false,
+        "pay": false
+      }
+    ]
+  },
+  {
+    "name": "AVHRR",
+    "sensor": [
+      "VNIR",
+      "SWIR"
+    ],
+    "description": "The Advanced Very High Resolution Radiometer (AVHRR) provides four- to six-band multispectral data from the NOAA polar-orbiting satellite series.",
+    "platform": [
+      "NOAA"
+    ],
+    "theme": [
+      "Land",
+      "Atmosphere",
+      "Marine"
+    ],
+    "active": true,
+    "sources": [
+      {
+        "name": "Earthdata Search",
+        "url": "https://search.earthdata.nasa.gov/",
+        "free": true,
+        "apply": false,
+        "pay": false
+      },
+      {
+        "name": "Earth Explorer",
+        "url": "https://earthexplorer.usgs.gov/",
+        "free": true,
+        "apply": true,
+        "pay": false
+      }
+    ]
+  },
+  {
+    "name": "Aquarius",
+    "sensor": [
+      "Radio"
+    ],
+    "description": "Its mission was to measure global sea surface salinity to better predict future climate conditions.",
+    "platform": [
+      "SAC-D"
+    ],
+    "theme": [
+      "Marine"
+    ],
+    "active": false,
+    "sources": [
+      {
+        "name": "Earthdata Search",
+        "url": "https://search.earthdata.nasa.gov/",
+        "free": true,
+        "apply": false,
+        "pay": false
+      }
+    ]
+  },
+  {
+    "name": "ECOSTRESS",
+    "sensor": [
+      "VNIR",
+      "SWIR"
+    ],
+    "description": "The ECOsystem Spaceborne Thermal Radiometer Experiment on Space Station (ECOSTRESS) mission measures the temperature of plants to better understand how much water plants need and how they respond to stress.",
+    "platform": [
+      "ISS"
+    ],
+    "theme": [
+      "Land"
+    ],
+    "active": true,
+    "sources": [
+      {
+        "name": "Earth Explorer",
+        "url": "https://earthexplorer.usgs.gov/",
+        "free": true,
+        "apply": true,
+        "pay": false
+      }
+    ]
+  },
+  {
+    "name": "EarthCARE",
+    "sensor": [
+      "Radar",
+      "LIDAR",
+      "SWIR",
+      "VNIR"
+    ],
+    "description": "ESA's cloud and aerosol mission. With four instruments, the Earth Cloud Aerosol and Radiation Explorer (EarthCARE) satellite mission shall shed light on the role that clouds and aerosols play in regulating Earth�s climate.",
+    "platform": [
+      "EarthCare"
+    ],
+    "theme": [
+      "Atmosphere"
+    ],
+    "active": true,
+    "sources": [
+      {
+        "name": "EarthCARE Online Dissemination",
+        "url": "https://ec-pdgs-dissemination2.eo.esa.int/oads/access/collection",
+        "free": true,
+        "apply": false,
+        "pay": false
+      }
+    ]
+  },
+  {
+    "name": "ASTER",
+    "sensor": [
+      "VNIR",
+      "SWIR"
+    ],
+    "description": "The�Advanced Spaceborne Thermal Emission and Reflection Radiometer�(ASTER) is a Japanese�remote sensing�instrument onboard the�Terra satellite.",
+    "platform": [
+      "Terra"
+    ],
+    "theme": [
+      "Land",
+      "Atmosphere"
+    ],
+    "active": false,
+    "sources": [
+      {
+        "name": "Earthdata Search",
+        "url": "https://search.earthdata.nasa.gov/",
+        "free": true,
+        "apply": false,
+        "pay": false
+      },
+      {
+        "name": "Earth Explorer",
+        "url": "https://earthexplorer.usgs.gov/",
+        "free": true,
+        "apply": true,
+        "pay": false
+      }
+    ]
+  },
+  {
+    "name": "AVNIR-2",
+    "sensor": [
+      "VNIR"
+    ],
+    "description": "The Advanced Visible and Near-Infrared Radiometer-2 (AVNIR-2) was a four band (visible and near-infrared) radiometer with a resolution of 10 m",
+    "platform": [
+      "ALOS"
+    ],
+    "theme": [
+      "Land"
+    ],
+    "active": false,
+    "sources": [
+      {
+        "name": "G-Portal",
+        "url": "https://gportal.jaxa.jp/gpr/?lang=en",
+        "free": true,
+        "apply": false,
+        "pay": false
+      }
+    ]
+  },
+  {
+    "name": "CBERS",
+    "sensor": [
+      "VNIR",
+      "SWIR"
+    ],
+    "description": "It's an optical imaging satellite collaboratively operated by the Chinese CRESDA and Brazilian INPE. It will be used to monitor water resources, agriculture, urban growth, and land use.",
+    "platform": [
+      "CBERS"
+    ],
+    "theme": [
+      "Land",
+      "Atmosphere"
+    ],
+    "active": true,
+    "sources": [
+      {
+        "name": "INPE",
+        "url": "http://www.dgi.inpe.br/catalogo/",
+        "free": true,
+        "apply": false,
+        "pay": false
+      }
+    ]
+  },
+  {
+    "name": "ETM+",
+    "sensor": [
+      "VNIR",
+      "SWIR"
+    ],
+    "description": "Landsat 7 Enhanced Thematic Mapper Plus (ETM+) 15- to 30-meter multispectral data.",
+    "platform": [
+      "Landsat 7"
+    ],
+    "theme": [
+      "Land",
+      "Atmosphere"
+    ],
+    "active": true,
+    "sources": [
+      {
+        "name": "Earthdata Search",
+        "url": "https://search.earthdata.nasa.gov/",
+        "free": true,
+        "apply": false,
+        "pay": false
+      },
+      {
+        "name": "Earth Explorer",
+        "url": "https://earthexplorer.usgs.gov/",
+        "free": true,
+        "apply": true,
+        "pay": false
+      }
+    ]
+  },
+  {
+    "name": "EnMAP",
+    "sensor": [
+      "VNIR",
+      "SWIR",
+      "Hyperspectral"
+    ],
+    "description": "Hyperspectral satellite mission that monitors and characterizes Earth�s environment on a global scale. ",
+    "platform": [
+      "EnMAP"
+    ],
+    "theme": [
+      "Land"
+    ],
+    "active": true,
+    "sources": [
+      {
+        "name": "EnMAP DAP",
+        "url": "https://www.enmap.org/data_access/",
+        "free": true,
+        "apply": true,
+        "pay": false
+      }
+    ]
+  },
+  {
+    "name": "IKONOS",
+    "sensor": [
+      "VNIR"
+    ],
+    "description": "IKONOS provides a reliable stream of image data since January 2000, which has become the standard for commercial high-resolution satellite data products.",
+    "platform": [
+      "IKONOS"
+    ],
+    "theme": [
+      "Land"
+    ],
+    "active": true,
+    "sources": [
+      {
+        "name": "Earth Explorer",
+        "url": "https://earthexplorer.usgs.gov/",
+        "free": true,
+        "apply": true,
+        "pay": false
+      }
+    ]
+  },
+  {
+    "name": "MODIS",
+    "sensor": [
+      "VNIR",
+      "SWIR"
+    ],
+    "description": "The Moderate Resolution Imaging Spectroradiometer (MODIS) is a satellite-based sensor used for earth and climate measurements.",
+    "platform": [
+      "Terra",
+      "Aqua"
+    ],
+    "theme": [
+      "Land",
+      "Atmosphere",
+      "Marine"
+    ],
+    "active": true,
+    "sources": [
+      {
+        "name": "Earthdata Search",
+        "url": "https://search.earthdata.nasa.gov/",
+        "free": true,
+        "apply": false,
+        "pay": false
+      },
+      {
+        "name": "Earth Explorer",
+        "url": "https://earthexplorer.usgs.gov/",
+        "free": true,
+        "apply": true,
+        "pay": false
+      }
+    ]
+  },
+  {
+    "name": "MSS",
+    "sensor": [
+      "VNIR",
+      "SWIR"
+    ],
+    "description": "Landsat 4-5 Multispectral Scanner (MSS) 80-meter multispectral data.��Delivered data processed to 60-meter pixel size.",
+    "platform": [
+      "Landsat 1-3",
+      "Landsat 4-5"
+    ],
+    "theme": [
+      "Land",
+      "Marine"
+    ],
+    "active": false,
+    "sources": [
+      {
+        "name": "Earth Explorer",
+        "url": "https://earthexplorer.usgs.gov/",
+        "free": true,
+        "apply": true,
+        "pay": false
+      }
+    ]
+  },
+  {
+    "name": "OLI",
+    "sensor": [
+      "VNIR",
+      "SWIR"
+    ],
+    "description": "Landsat 8-9 Operational Land Imager (OLI) 15- to 30-meter multispectral data.",
+    "platform": [
+      "Landsat 8",
+      "Landsat 9"
+    ],
+    "theme": [
+      "Land",
+      "Marine"
+    ],
+    "active": true,
+    "sources": [
+      {
+        "name": "Earthdata Search",
+        "url": "https://search.earthdata.nasa.gov/",
+        "free": true,
+        "apply": false,
+        "pay": false
+      },
+      {
+        "name": "Earth Explorer",
+        "url": "https://earthexplorer.usgs.gov/",
+        "free": true,
+        "apply": true,
+        "pay": false
+      }
+    ]
+  },
+  {
+    "name": "PALSAR",
+    "sensor": [
+      "Radar"
+    ],
+    "description": "The Phased Array L-band Synthetic Aperture Radar (PALSAR) provides functions like variable off-nadir angles and modes such as full-polarimetry mode and ScanSAR mode.",
+    "platform": [
+      "ALOS"
+    ],
+    "theme": [
+      "Land"
+    ],
+    "active": false,
+    "sources": [
+      {
+        "name": "G-Portal",
+        "url": "https://gportal.jaxa.jp/gpr/?lang=en",
+        "free": true,
+        "apply": false,
+        "pay": false
+      }
+    ]
+  },
+  {
+    "name": "MAXAR",
+    "sensor": [
+      "VNIR",
+      "SWIR"
+    ],
+    "description": "Provides high-resolution satellite imagery.",
+    "platform": [
+      "MAXAR"
+    ],
+    "theme": [
+      "Land"
+    ],
+    "active": true,
+    "sources": [
+      {
+        "name": "MAXAR",
+        "url": "https://www.maxar.com/",
+        "free": true,
+        "apply": true,
+        "pay": true
+      }
+    ]
+  },
+  {
+    "name": "MSI",
+    "sensor": [
+      "VNIR",
+      "SWIR"
+    ],
+    "description": "The MSI measures the Earth's reflected radiance in 13 spectral bands from VNIR to SWIR.",
+    "platform": [
+      "Sentinel-2"
+    ],
+    "theme": [
+      "Land",
+      "Marine"
+    ],
+    "active": true,
+    "sources": [
+      {
+        "name": "WEKEO",
+        "url": "https://www.wekeo.eu/",
+        "free": true,
+        "apply": false,
+        "pay": false
+      },
+      {
+        "name": "CDSE",
+        "url": "https://dataspace.copernicus.eu/",
+        "free": true,
+        "apply": false,
+        "pay": false
+      }
+    ]
+  },
+  {
+    "name": "OLCI",
+    "sensor": [
+      "VNIR",
+      "SWIR"
+    ],
+    "description": "The OLCI is a push-broom instrument with five camera modules sharing the field of view.",
+    "platform": [
+      "Sentinel-3"
+    ],
+    "theme": [
+      "Land",
+      "Marine"
+    ],
+    "active": true,
+    "sources": [
+      {
+        "name": "WEKEO",
+        "url": "https://www.wekeo.eu/",
+        "free": true,
+        "apply": false,
+        "pay": false
+      },
+      {
+        "name": "EUMETSAT Data Store",
+        "url": "https://data.eumetsat.int/search?query=",
+        "free": true,
+        "apply": false,
+        "pay": false
+      },
+      {
+        "name": "Earthdata Search",
+        "url": "https://search.earthdata.nasa.gov/",
+        "free": true,
+        "apply": false,
+        "pay": false
+      },
+      {
+        "name": "CDSE",
+        "url": "https://dataspace.copernicus.eu/",
+        "free": true,
+        "apply": false,
+        "pay": false
+      },
+      {
+        "name": "Earth Explorer",
+        "url": "https://earthexplorer.usgs.gov/",
+        "free": true,
+        "apply": true,
+        "pay": false
+      }
+    ]
+  },
+  {
+    "name": "OrbView-3",
+    "sensor": [
+      "VNIR"
+    ],
+    "description": "GeoEye�s OrbView-3 satellite was among the world�s first commercial satellites to provide high-resolution imagery from space.",
+    "platform": [
+      "OrbView-3"
+    ],
+    "theme": [
+      "Land"
+    ],
+    "active": false,
+    "sources": [
+      {
+        "name": "Earth Explorer",
+        "url": "https://earthexplorer.usgs.gov/",
+        "free": true,
+        "apply": true,
+        "pay": false
+      }
+    ]
+  },
+  {
+    "name": "POSEIDON4",
+    "sensor": [
+      "Radar",
+      "Altimetry"
+    ],
+    "description": "The Sentinel-6 Michael Freilich (S6MF) is a radar altimeter satellite will measure sea level change from space.",
+    "platform": [
+      "Sentinel-6 (Michael Freilch)"
+    ],
+    "theme": [
+      "Marine"
+    ],
+    "active": true,
+    "sources": [
+      {
+        "name": "WEKEO",
+        "url": "https://www.wekeo.eu/",
+        "free": true,
+        "apply": false,
+        "pay": false
+      },
+      {
+        "name": "EUMETSAT Data Store",
+        "url": "https://data.eumetsat.int/search?query=",
+        "free": true,
+        "apply": false,
+        "pay": false
+      }
+    ]
+  },
+  {
+    "name": "PRISM",
+    "sensor": [
+      "VNIR"
+    ],
+    "description": "The Panchromatic Remote-sensing Instrument for Stereo Mapping (PRISM) was a panchromatic radiometer with 2.5 m spatial resolution at nadir.",
+    "platform": [
+      "ALOS"
+    ],
+    "theme": [
+      "Land"
+    ],
+    "active": false,
+    "sources": [
+      {
+        "name": "G-Portal",
+        "url": "https://gportal.jaxa.jp/gpr/?lang=en",
+        "free": true,
+        "apply": false,
+        "pay": false
+      }
+    ]
+  },
+  {
+    "name": "PRISMA PAN",
+    "sensor": [
+      "VNIR"
+    ],
+    "description": "Panchromatic instrument on board PRISMA",
+    "platform": [
+      "PRISMA"
+    ],
+    "theme": [
+      "Land"
+    ],
+    "active": true,
+    "sources": [
+      {
+        "name": "PRISMA Portal",
+        "url": "https://www.asi.it/en/earth-science/prisma/",
+        "free": true,
+        "apply": true,
+        "pay": false
+      }
+    ]
+  },
+  {
+    "name": "Planet",
+    "sensor": [
+      "VNIR"
+    ],
+    "description": "Provides high-resolution satellite imagery.",
+    "platform": [
+      "SkySat",
+      "PlanetScope"
+    ],
+    "theme": [
+      "Land"
+    ],
+    "active": true,
+    "sources": [
+      {
+        "name": "Planet",
+        "url": "https://www.planet.com/",
+        "free": false,
+        "apply": false,
+        "pay": true
+      }
+    ]
+  },
+  {
+    "name": "SEVIRI",
+    "sensor": [
+      "VNIR",
+      "SWIR"
+    ],
+    "description": "The Spinning Enhanced Visible and InfraRed Imager (SEVIRI) is MSG's primary instrument and has the capacity to observe the Earth in 12 spectral channels.",
+    "platform": [
+      "MSG"
+    ],
+    "theme": [
+      "Atmosphere"
+    ],
+    "active": true,
+    "sources": [
+      {
+        "name": "Earthdata Search",
+        "url": "https://search.earthdata.nasa.gov/",
+        "free": true,
+        "apply": false,
+        "pay": false
+      }
+    ]
+  },
+  {
+    "name": "SMAP",
+    "sensor": [
+      "Radar",
+      "Radio"
+    ],
+    "description": "Measures soil moisture and its freeze/thaw state.",
+    "platform": [
+      "SMAP"
+    ],
+    "theme": [
+      "Land"
+    ],
+    "active": true,
+    "sources": [
+      {
+        "name": "NSIDC",
+        "url": "https://nsidc.org/data/search#",
+        "free": true,
+        "apply": false,
+        "pay": false
+      },
+      {
+        "name": "ASF",
+        "url": "https://asf.alaska.edu/how-to/data-basics/asf-services-data-discovery/",
+        "free": true,
+        "apply": false,
+        "pay": false
+      }
+    ]
+  },
+  {
+    "name": "PRISMA HYC",
+    "sensor": [
+      "VNIR",
+      "SWIR",
+      "Hyperspectral"
+    ],
+    "description": "Hyperspectral instrument on board PRISMA, capable of observing from the optical to the near infrared.",
+    "platform": [
+      "PRISMA"
+    ],
+    "theme": [
+      "Land"
+    ],
+    "active": true,
+    "sources": [
+      {
+        "name": "PRISMA Portal",
+        "url": "https://www.asi.it/en/earth-science/prisma/",
+        "free": true,
+        "apply": true,
+        "pay": false
+      }
+    ]
+  },
+  {
+    "name": "PROBA-V",
+    "sensor": [
+      "VNIR",
+      "SWIR"
+    ],
+    "description": "The PROBA-V VEGETATION Raw products and Synthesis products ensure coverage of all significant landmasses worldwide.",
+    "platform": [
+      "Proba-V"
+    ],
+    "theme": [
+      "Land"
+    ],
+    "active": true,
+    "sources": [
+      {
+        "name": "MEP PROBA-V",
+        "url": "https://viewer.probav.vito.be/probav",
+        "free": true,
+        "apply": false,
+        "pay": false
+      }
+    ]
+  },
+  {
+    "name": "Pleiades",
+    "sensor": [
+      "VNIR"
+    ],
+    "description": "Provides high-resolution satellite imagery.",
+    "platform": [
+      "Pleiades"
+    ],
+    "theme": [
+      "Land"
+    ],
+    "active": true,
+    "sources": [
+      {
+        "name": "Geo-Airbus Defense",
+        "url": "https://www.intelligence-airbusds.com/imagery/",
+        "free": false,
+        "apply": false,
+        "pay": true
+      }
+    ]
+  },
+  {
+    "name": "SLSTR",
+    "sensor": [
+      "VNIR",
+      "SWIR"
+    ],
+    "description": "Provides a reference Land Surface Temperature and Sea Surface Temperature dataset for climate data records.",
+    "platform": [
+      "Sentinel-3"
+    ],
+    "theme": [
+      "Land",
+      "Marine"
+    ],
+    "active": true,
+    "sources": [
+      {
+        "name": "WEKEO",
+        "url": "https://www.wekeo.eu/",
+        "free": true,
+        "apply": false,
+        "pay": false
+      },
+      {
+        "name": "EUMETSAT Data Store",
+        "url": "https://data.eumetsat.int/search?query=",
+        "free": true,
+        "apply": false,
+        "pay": false
+      },
+      {
+        "name": "CDSE",
+        "url": "https://dataspace.copernicus.eu/",
+        "free": true,
+        "apply": false,
+        "pay": false
+      }
+    ]
+  },
+  {
+    "name": "SMOS (MIRAS)",
+    "sensor": [
+      "Radio"
+    ],
+    "description": "SMOS mission measures soil moisture and ocean salinity globally.",
+    "platform": [
+      "SMOS"
+    ],
+    "theme": [
+      "Land",
+      "Marine"
+    ],
+    "active": true,
+    "sources": [
+      {
+        "name": "SDS",
+        "url": "https://smos-diss.eo.esa.int/oads/access/",
+        "free": false,
+        "apply": false,
+        "pay": false
+      }
+    ]
+  },
+  {
+    "name": "SPOT",
+    "sensor": [
+      "VNIR"
+    ],
+    "description": "Provides high-resolution satellite imagery.",
+    "platform": [
+      "SPOT"
+    ],
+    "theme": [
+      "Land"
+    ],
+    "active": true,
+    "sources": [
+      {
+        "name": "WEKEO",
+        "url": "https://www.wekeo.eu/",
+        "free": true,
+        "apply": false,
+        "pay": false
+      },
+      {
+        "name": "Geo-Airbus Defense",
+        "url": "https://www.intelligence-airbusds.com/imagery/",
+        "free": false,
+        "apply": false,
+        "pay": true
+      }
+    ]
+  },
+  {
+    "name": "Sentinel-1",
+    "sensor": [
+      "Radar"
+    ],
+    "description": "C-band synthetic aperture radar, enabling to acquire imagery regardless of the weather.",
+    "platform": [
+      "Sentinel-1"
+    ],
+    "theme": [
+      "Land",
+      "Marine"
+    ],
+    "active": true,
+    "sources": [
+      {
+        "name": "WEKEO",
+        "url": "https://www.wekeo.eu/",
+        "free": true,
+        "apply": false,
+        "pay": false
+      },
+      {
+        "name": "ASF",
+        "url": "https://asf.alaska.edu/how-to/data-basics/asf-services-data-discovery/",
+        "free": true,
+        "apply": false,
+        "pay": false
+      },
+      {
+        "name": "Earthdata Search",
+        "url": "https://search.earthdata.nasa.gov/",
+        "free": true,
+        "apply": false,
+        "pay": false
+      },
+      {
+        "name": "CDSE",
+        "url": "https://dataspace.copernicus.eu/",
+        "free": true,
+        "apply": false,
+        "pay": false
+      }
+    ]
+  },
+  {
+    "name": "TM",
+    "sensor": [
+      "VNIR",
+      "SWIR"
+    ],
+    "description": "Landsat 4-5 TM image data files consist of seven spectral bands (See�band designations). The resolution is 30 meters for bands 1 to 7. �(Thermal infrared band 6 was collected at 120 meters but was resampled to 30 meters.)",
+    "platform": [
+      "Landsat 4-5"
+    ],
+    "theme": [
+      "Land"
+    ],
+    "active": false,
+    "sources": [
+      {
+        "name": "Earth Explorer",
+        "url": "https://earthexplorer.usgs.gov/",
+        "free": true,
+        "apply": true,
+        "pay": false
+      }
+    ]
+  },
+  {
+    "name": "TerraSAR-X",
+    "sensor": [
+      "Radar"
+    ],
+    "description": "TerraSAR-X takes SAR data using the X-band.",
+    "platform": [
+      "TSX"
+    ],
+    "theme": [
+      "Land"
+    ],
+    "active": true,
+    "sources": [
+      {
+        "name": "Geo-Airbus Defense",
+        "url": "https://www.intelligence-airbusds.com/imagery/",
+        "free": false,
+        "apply": false,
+        "pay": true
+      }
+    ]
+  },
+  {
+    "name": "VIIRS",
+    "sensor": [
+      "VNIR",
+      "SWIR"
+    ],
+    "description": "VIIRS collects imagery and radiometric measurements of the land, atmosphere, cryosphere, and oceans in the visible and infrared bands of the electromagnetic spectrum.",
+    "platform": [
+      "NOAA",
+      "Suomi-NPP"
+    ],
+    "theme": [
+      "Land",
+      "Atmosphere",
+      "Marine"
+    ],
+    "active": true,
+    "sources": [
+      {
+        "name": "Earthdata Search",
+        "url": "https://search.earthdata.nasa.gov/",
+        "free": true,
+        "apply": false,
+        "pay": false
+      }
+    ]
+  },
+  {
+    "name": "SRAL",
+    "sensor": [
+      "Altimetry",
+      "Radar"
+    ],
+    "description": "SRAL (Synthetic Aperture Radar Altimeter) is a dual-frequency radar altimeter that provides accurate topography measurements over sea ice, ice sheets, rivers, and lakes. It uses SAR altimetry technologies to improve along-track resolution",
+    "platform": [
+      "Sentinel-3"
+    ],
+    "theme": [
+      "Atmosphere",
+      "Marine",
+      "Land"
+    ],
+    "active": true,
+    "sources": [
+      {
+        "name": "WEKEO",
+        "url": "https://www.wekeo.eu/",
+        "free": true,
+        "apply": false,
+        "pay": false
+      },
+      {
+        "name": "EUMETSAT Data Store",
+        "url": "https://data.eumetsat.int/search?query=",
+        "free": true,
+        "apply": false,
+        "pay": false
+      },
+      {
+        "name": "CDSE",
+        "url": "https://dataspace.copernicus.eu/",
+        "free": true,
+        "apply": false,
+        "pay": false
+      }
+    ]
+  },
+  {
+    "name": "TIRS",
+    "sensor": [
+      "VNIR",
+      "SWIR"
+    ],
+    "description": "Thermal Infrared Sensor (TIRS) 30-meter (resampled from 100m) bands.",
+    "platform": [
+      "Landsat 8",
+      "Landsat 9"
+    ],
+    "theme": [
+      "Land"
+    ],
+    "active": true,
+    "sources": [
+      {
+        "name": "Earth Explorer",
+        "url": "https://earthexplorer.usgs.gov/",
+        "free": true,
+        "apply": true,
+        "pay": false
+      }
+    ]
+  },
+  {
+    "name": "TROPOMI",
+    "sensor": [
+      "VNIR",
+      "SWIR",
+      "Ultraviolet"
+    ],
+    "description": "Tropomi is dedicated to monitoring air pollution. It is an ultraviolet, visible, near and short-wavelength infrared spectrometer.",
+    "platform": [
+      "Sentinel-5p"
+    ],
+    "theme": [
+      "Atmosphere"
+    ],
+    "active": true,
+    "sources": [
+      {
+        "name": "Earthdata Search",
+        "url": "https://search.earthdata.nasa.gov/",
+        "free": true,
+        "apply": false,
+        "pay": false
+      },
+      {
+        "name": "CDSE",
+        "url": "https://dataspace.copernicus.eu/",
+        "free": true,
+        "apply": false,
+        "pay": false
+      }
+    ]
+  },
+  {
+    "name": "Umbra SAR",
+    "sensor": [
+      "Radar"
+    ],
+    "description": "Umbra satellites generate X-band synthetic aperture radar data.",
+    "platform": [
+      "UMBRA"
+    ],
+    "theme": [
+      "Land"
+    ],
+    "active": true,
+    "sources": [
+      {
+        "name": "UMBRA",
+        "url": "https://umbra.space/",
+        "free": true,
+        "apply": false,
+        "pay": true
+      }
+    ]
+  },
+  {
+    "name": "Vision-1",
+    "sensor": [
+      "VNIR"
+    ],
+    "description": "Provides high-resolution satellite imagery.",
+    "platform": [
+      "Vision-1"
+    ],
+    "theme": [
+      "Land"
+    ],
+    "active": true,
+    "sources": [
+      {
+        "name": "Geo-Airbus Defense",
+        "url": "https://www.intelligence-airbusds.com/imagery/",
+        "free": false,
+        "apply": false,
+        "pay": true
+      }
+    ]
+  }
+]

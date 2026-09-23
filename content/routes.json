@@ -1,0 +1,507 @@
+[
+  {
+    "path": "/",
+    "title": "EOMasters | Mastering Earth Observation",
+    "file": "index.html"
+  },
+  {
+    "path": "/eom-software",
+    "title": "Software",
+    "file": "eom-software\\index.html"
+  },
+  {
+    "path": "/knowledge",
+    "title": "Knowledge",
+    "file": "knowledge\\index.html"
+  },
+  {
+    "path": "/community",
+    "title": "Community",
+    "file": "community\\index.html"
+  },
+  {
+    "path": "/eom-software/service",
+    "title": "Software & Training",
+    "file": "eom-software\\service\\index.html"
+  },
+  {
+    "path": "/about",
+    "title": "About EOMasters",
+    "file": "about\\index.html"
+  },
+  {
+    "path": "/contact",
+    "title": "Contact",
+    "file": "contact\\index.html"
+  },
+  {
+    "path": "/knowledge/tutorials",
+    "title": "Tutorials",
+    "file": "knowledge\\tutorials\\index.html"
+  },
+  {
+    "path": "/eom-software/eomtbx",
+    "title": "EOMasters Toolbox",
+    "file": "eom-software\\eomtbx\\index.html"
+  },
+  {
+    "path": "/eom-software/davalien",
+    "title": "EOMasters DAVALIEN",
+    "file": "eom-software\\davalien\\index.html"
+  },
+  {
+    "path": "/knowledge/eopedia",
+    "title": "EOpedia",
+    "file": "knowledge\\eopedia\\index.html"
+  },
+  {
+    "path": "/knowledge/coastalmap",
+    "title": "Coastal Map",
+    "file": "knowledge\\coastalmap\\index.html"
+  },
+  {
+    "path": "/testimonials",
+    "title": "Testimonials",
+    "file": "testimonials\\index.html"
+  },
+  {
+    "path": "/imprint",
+    "title": "Imprint",
+    "file": "imprint\\index.html"
+  },
+  {
+    "path": "/terms-conditions",
+    "title": "Gen. Terms & Conditions",
+    "file": "terms-conditions\\index.html"
+  },
+  {
+    "path": "/data-protection-policy-gdpr",
+    "title": "Privacy policy",
+    "file": "data-protection-policy-gdpr\\index.html"
+  },
+  {
+    "path": "/post/there-can-only-be-one",
+    "title": "There can only be one!",
+    "file": "post\\there-can-only-be-one\\index.html"
+  },
+  {
+    "path": "/post/inside-the-sentinel-2-super-resolution-model-of-the-eomasters-toolbox",
+    "title": "Inside the Sentinel‑2 Super‑Resolution Model of the EOMasters Toolbox",
+    "file": "post\\inside-the-sentinel-2-super-resolution-model-of-the-eomasters-toolbox\\index.html"
+  },
+  {
+    "path": "/post/terraflux-prototyping-a-new-webbased-earth-observation-application",
+    "title": "TerraFlux - Prototyping a New Webbased Earth Observation Application",
+    "file": "post\\terraflux-prototyping-a-new-webbased-earth-observation-application\\index.html"
+  },
+  {
+    "path": "/post/great-news-eomasters-toolbox-has-been-approved-for-research-funding",
+    "title": "Great news: EOMasters Toolbox has been approved for research funding",
+    "file": "post\\great-news-eomasters-toolbox-has-been-approved-for-research-funding\\index.html"
+  },
+  {
+    "path": "/post/presenting-global-coastal-map-10m",
+    "title": "Presenting Global Coastal Map @10m",
+    "file": "post\\presenting-global-coastal-map-10m\\index.html"
+  },
+  {
+    "path": "/post/the-new-pyeditor-in-eomtbx-pro",
+    "title": "The new PyEditor in EOMTBX Pro",
+    "file": "post\\the-new-pyeditor-in-eomtbx-pro\\index.html"
+  },
+  {
+    "path": "/post/normalisation-of-surface-reflectance-for-sentinel-2",
+    "title": "Normalisation of Surface Reflectance for Sentinel-2",
+    "file": "post\\normalisation-of-surface-reflectance-for-sentinel-2\\index.html"
+  },
+  {
+    "path": "/post/sentinel-2-geometry-up-scaling",
+    "title": "Sentinel-2 Geometry Up-scaling",
+    "file": "post\\sentinel-2-geometry-up-scaling\\index.html"
+  },
+  {
+    "path": "/post/super-resolution-of-sentinel-2-imagery",
+    "title": "Super-Resolution of Sentinel-2  Imagery",
+    "file": "post\\super-resolution-of-sentinel-2-imagery\\index.html"
+  },
+  {
+    "path": "/post/release-of-eomasters-toolbox-pro-v1-2",
+    "title": "Release of EOMasters Toolbox Pro v1.2",
+    "file": "post\\release-of-eomasters-toolbox-pro-v1-2\\index.html"
+  },
+  {
+    "path": "/post/surprising-satellite-remote-sensing-applications",
+    "title": "Surprising Satellite Remote Sensing Applications",
+    "file": "post\\surprising-satellite-remote-sensing-applications\\index.html"
+  },
+  {
+    "path": "/post/snap-11-what-s-new",
+    "title": "SNAP 11 - What's new?",
+    "file": "post\\snap-11-what-s-new\\index.html"
+  },
+  {
+    "path": "/post/outlook-on-upcoming-expansions",
+    "title": "Outlook on Upcoming Expansions",
+    "file": "post\\outlook-on-upcoming-expansions\\index.html"
+  },
+  {
+    "path": "/post/list-of-great-tutorials-for-esa-snap",
+    "title": "List of Great Tutorials for ESA SNAP",
+    "file": "post\\list-of-great-tutorials-for-esa-snap\\index.html"
+  },
+  {
+    "path": "/post/introduction-of-the-eomasters-toolbox-pro-and-launch-discount",
+    "title": "Introduction of the EOMasters Toolbox Pro and launch discount",
+    "file": "post\\introduction-of-the-eomasters-toolbox-pro-and-launch-discount\\index.html"
+  },
+  {
+    "path": "/post/the-environmental-impact-of-artificial-turf-at-the-euro2024-fan-zone",
+    "title": "The Environmental Impact of Artificial Turf at the EURO2024 Fan Zone",
+    "file": "post\\the-environmental-impact-of-artificial-turf-at-the-euro2024-fan-zone\\index.html"
+  },
+  {
+    "path": "/post/is-it-really-time-to-move-eo-data-processing-to-the-cloud",
+    "title": "Is It Really Time to Move EO Data Processing to the Cloud?",
+    "file": "post\\is-it-really-time-to-move-eo-data-processing-to-the-cloud\\index.html"
+  },
+  {
+    "path": "/post/homemade-public-maven-repository",
+    "title": "Homemade Public Maven Repository",
+    "file": "post\\homemade-public-maven-repository\\index.html"
+  },
+  {
+    "path": "/post/davalien-v1-0-released-an-introduction",
+    "title": "DAVALIEN v1.0 released - An Introduction",
+    "file": "post\\davalien-v1-0-released-an-introduction\\index.html"
+  },
+  {
+    "path": "/post/eomasters-toolbox-v1-0-released-an-introduction",
+    "title": "EOMasters Toolbox v1.0 Released - An Introduction",
+    "file": "post\\eomasters-toolbox-v1-0-released-an-introduction\\index.html"
+  },
+  {
+    "path": "/post/esa-snap-v10-what-s-new",
+    "title": "ESA SNAP v10 – What’s new?",
+    "file": "post\\esa-snap-v10-what-s-new\\index.html"
+  },
+  {
+    "path": "/post/good-news-for-the-environment",
+    "title": "Good News for the Environment",
+    "file": "post\\good-news-for-the-environment\\index.html"
+  },
+  {
+    "path": "/post/the-line-a-look-at-the-mega-project",
+    "title": "The Line - A Look at the Megaproject",
+    "file": "post\\the-line-a-look-at-the-mega-project\\index.html"
+  },
+  {
+    "path": "/post/thoughts-of-a-dev-is-it-worth-it",
+    "title": "Thoughts of a Dev - Is it worth it?",
+    "file": "post\\thoughts-of-a-dev-is-it-worth-it\\index.html"
+  },
+  {
+    "path": "/post/where-to-get-eo-remote-sensing-data",
+    "title": "Where to get EO Remote Sensing Data?",
+    "file": "post\\where-to-get-eo-remote-sensing-data\\index.html"
+  },
+  {
+    "path": "/post/the-earth-is-in-our-hands-really",
+    "title": "The Earth is in our Hands. Really?",
+    "file": "post\\the-earth-is-in-our-hands-really\\index.html"
+  },
+  {
+    "path": "/post/satellite-boom-it-is-getting-crowdy",
+    "title": "Satellite Boom - It is Getting Crowdy!",
+    "file": "post\\satellite-boom-it-is-getting-crowdy\\index.html"
+  },
+  {
+    "path": "/post/hello-eo-masters",
+    "title": "Hello EO-Masters!",
+    "file": "post\\hello-eo-masters\\index.html"
+  },
+  {
+    "path": "/blog",
+    "title": "Blog",
+    "file": "blog\\index.html"
+  },
+  {
+    "path": "/blog/categories/earth-observation",
+    "title": "Earth observation articles",
+    "file": "blog\\categories\\earth-observation\\index.html"
+  },
+  {
+    "path": "/blog/categories/space-science",
+    "title": "Space science articles",
+    "file": "blog\\categories\\space-science\\index.html"
+  },
+  {
+    "path": "/blog/categories/opinion",
+    "title": "Opinion articles",
+    "file": "blog\\categories\\opinion\\index.html"
+  },
+  {
+    "path": "/blog/categories/software",
+    "title": "Software articles",
+    "file": "blog\\categories\\software\\index.html"
+  },
+  {
+    "path": "/blog/categories/sunstainability",
+    "title": "Sustainability articles",
+    "file": "blog\\categories\\sunstainability\\index.html"
+  },
+  {
+    "path": "/newsletter-archive",
+    "title": "Newsletter archive",
+    "file": "newsletter-archive\\index.html"
+  },
+  {
+    "path": "/so/a3PJggod7",
+    "title": "EOMasters Newsletter #041",
+    "file": "so\\a3PJggod7\\index.html"
+  },
+  {
+    "path": "/so/2aPITP5gc",
+    "title": "EOMasters Newsletter #040",
+    "file": "so\\2aPITP5gc\\index.html"
+  },
+  {
+    "path": "/so/edPGh0ds4",
+    "title": "EOMasters Newsletter #039",
+    "file": "so\\edPGh0ds4\\index.html"
+  },
+  {
+    "path": "/so/d9PFPuZT4",
+    "title": "EOMasters Newsletter #038",
+    "file": "so\\d9PFPuZT4\\index.html"
+  },
+  {
+    "path": "/so/d9PEWiw5N",
+    "title": "EOMasters Newsletter #036",
+    "file": "so\\d9PEWiw5N\\index.html"
+  },
+  {
+    "path": "/so/c7PDIyuBW",
+    "title": "EOMasters Newsletter #036",
+    "file": "so\\c7PDIyuBW\\index.html"
+  },
+  {
+    "path": "/so/5bPCAjMZQ",
+    "title": "EOMasters Newsletter #035",
+    "file": "so\\5bPCAjMZQ\\index.html"
+  },
+  {
+    "path": "/so/0dPAkB0Wf",
+    "title": "EOMasters Newsletter #034",
+    "file": "so\\0dPAkB0Wf\\index.html"
+  },
+  {
+    "path": "/so/bdP9-lF8B",
+    "title": "EOMasters Newsletter #033",
+    "file": "so\\bdP9-lF8B\\index.html"
+  },
+  {
+    "path": "/so/5dP8uVLPS",
+    "title": "EOMasters Newsletter #031",
+    "file": "so\\5dP8uVLPS\\index.html"
+  },
+  {
+    "path": "/so/70P7m8_Oa",
+    "title": "EOMasters Newsletter #031",
+    "file": "so\\70P7m8_Oa\\index.html"
+  },
+  {
+    "path": "/so/e1P6deRvD",
+    "title": "EOMasters Newsletter #030",
+    "file": "so\\e1P6deRvD\\index.html"
+  },
+  {
+    "path": "/so/acP5RNeav",
+    "title": "EOMasters Newsletter #029",
+    "file": "so\\acP5RNeav\\index.html"
+  },
+  {
+    "path": "/so/3bP47-LLr",
+    "title": "EOMasters Newsletter #028",
+    "file": "so\\3bP47-LLr\\index.html"
+  },
+  {
+    "path": "/so/57P3AkeKy",
+    "title": "EOMasters Newsletter #027",
+    "file": "so\\57P3AkeKy\\index.html"
+  },
+  {
+    "path": "/so/e9P1U0guj",
+    "title": "EOMasters Newsletter #026",
+    "file": "so\\e9P1U0guj\\index.html"
+  },
+  {
+    "path": "/so/d1P0wbKWj",
+    "title": "EOMasters Newsletter #025",
+    "file": "so\\d1P0wbKWj\\index.html"
+  },
+  {
+    "path": "/so/0dO_G0D65",
+    "title": "EOMasters Newsletter #024",
+    "file": "so\\0dO_G0D65\\index.html"
+  },
+  {
+    "path": "/so/e4Oz2vTkG",
+    "title": "EOMasters Newsletter #023",
+    "file": "so\\e4Oz2vTkG\\index.html"
+  },
+  {
+    "path": "/so/69OxsjiL4",
+    "title": "EOMasters Newsletter #022",
+    "file": "so\\69OxsjiL4\\index.html"
+  },
+  {
+    "path": "/so/a7Owj99t7",
+    "title": "EOMasters Newsletter #021",
+    "file": "so\\a7Owj99t7\\index.html"
+  },
+  {
+    "path": "/so/e8OvQsTnc",
+    "title": "EOMasters Newsletter #020",
+    "file": "so\\e8OvQsTnc\\index.html"
+  },
+  {
+    "path": "/so/92OuYpuwa",
+    "title": "EOMasters Newsletter #019",
+    "file": "so\\92OuYpuwa\\index.html"
+  },
+  {
+    "path": "/so/cbOtQa2JI",
+    "title": "EOMasters Newsletter #018",
+    "file": "so\\cbOtQa2JI\\index.html"
+  },
+  {
+    "path": "/so/f2OsIj9_2",
+    "title": "EOMasters Newsletter #017",
+    "file": "so\\f2OsIj9_2\\index.html"
+  },
+  {
+    "path": "/so/faOrAkF5f",
+    "title": "EOMasters Newsletter #016",
+    "file": "so\\faOrAkF5f\\index.html"
+  },
+  {
+    "path": "/so/d7Oq2Vm7Q",
+    "title": "EOMasters Newsletter #015",
+    "file": "so\\d7Oq2Vm7Q\\index.html"
+  },
+  {
+    "path": "/so/8dOnxz8Ur",
+    "title": "EOMasters Newsletter #014",
+    "file": "so\\8dOnxz8Ur\\index.html"
+  },
+  {
+    "path": "/so/21OmpVfXA",
+    "title": "EOMasters Newsletter #013",
+    "file": "so\\21OmpVfXA\\index.html"
+  },
+  {
+    "path": "/so/6dOleHcTC",
+    "title": "EOMasters Newsletter #012",
+    "file": "so\\6dOleHcTC\\index.html"
+  },
+  {
+    "path": "/so/0dOlTiuVo",
+    "title": "EOMasters Newsletter #011",
+    "file": "so\\0dOlTiuVo\\index.html"
+  },
+  {
+    "path": "/so/64OkPkS3f",
+    "title": "EOMasters Newsletter #010",
+    "file": "so\\64OkPkS3f\\index.html"
+  },
+  {
+    "path": "/so/d0OjM9jO2",
+    "title": "EOMasters Newsletter #009",
+    "file": "so\\d0OjM9jO2\\index.html"
+  },
+  {
+    "path": "/so/84OiEDppG",
+    "title": "EOMasters Newsletter #008",
+    "file": "so\\84OiEDppG\\index.html"
+  },
+  {
+    "path": "/so/69Ogyv1qN",
+    "title": "EOMasters Newsletter #007",
+    "file": "so\\69Ogyv1qN\\index.html"
+  },
+  {
+    "path": "/so/8bOf0ItHB",
+    "title": "EOMasters Newsletter #006 - Test",
+    "file": "so\\8bOf0ItHB\\index.html"
+  },
+  {
+    "path": "/so/15OeS3x45",
+    "title": "EOMasters Newsletter #005",
+    "file": "so\\15OeS3x45\\index.html"
+  },
+  {
+    "path": "/so/c1Occ3Aa5",
+    "title": "EOMasters Newsletter #004",
+    "file": "so\\c1Occ3Aa5\\index.html"
+  },
+  {
+    "path": "/so/ceObTTxcO",
+    "title": "EOMasters Newsletter #003",
+    "file": "so\\ceObTTxcO\\index.html"
+  },
+  {
+    "path": "/so/5bOb5_7QP",
+    "title": "EOMasters Newsletter #002",
+    "file": "so\\5bOb5_7QP\\index.html"
+  },
+  {
+    "path": "/so/5aOTRmEgu",
+    "title": "EOMasters Newsletter #001",
+    "file": "so\\5aOTRmEgu\\index.html"
+  },
+  {
+    "path": "/eoddb",
+    "title": "EO Data DB",
+    "file": "eoddb\\index.html"
+  },
+  {
+    "path": "/404.html",
+    "title": "Page not found",
+    "file": "404.html"
+  },
+  {
+    "path": "/eom-software/eomtbx-pro",
+    "file": "eom-software\\eomtbx-pro\\index.html",
+    "redirect": "/eom-software/eomtbx/"
+  },
+  {
+    "path": "/eom-software/eomtbx-basic",
+    "file": "eom-software\\eomtbx-basic\\index.html",
+    "redirect": "/eom-software/eomtbx/"
+  },
+  {
+    "path": "/eomtbx",
+    "file": "eomtbx\\index.html",
+    "redirect": "/eom-software/eomtbx/"
+  },
+  {
+    "path": "/davalien",
+    "file": "davalien\\index.html",
+    "redirect": "/eom-software/davalien/"
+  },
+  {
+    "path": "/eomasters",
+    "file": "eomasters\\index.html",
+    "redirect": "/about/"
+  },
+  {
+    "path": "/copy-of-tutorials",
+    "file": "copy-of-tutorials\\index.html",
+    "redirect": "/knowledge/tutorials/"
+  },
+  {
+    "path": "/custom",
+    "file": "custom\\index.html",
+    "redirect": "/eom-software/service/"
+  }
+]

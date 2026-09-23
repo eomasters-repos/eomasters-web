@@ -1,0 +1,11 @@
+{
+  "path": "/knowledge/eopedia",
+  "title": "EOpedia",
+  "description": "",
+  "date": "",
+  "modified": "",
+  "image": "",
+  "html": "<a href=\"https://www.eopedia.org\"><img id=\"img_comp-m5f8be3r5\" src=\"/assets/c77a6f050571a591fff5.webp\" alt=\"EOpedia-Logo-trans-800.png\" loading=\"lazy\" decoding=\"async\"></a>\n<h1>EOpedia</h1>\n<p>EOpedia is a source of knowledge for the Earth observation community. It shall become the go-to site for people looking for information about remote sensing and earth observation.</p>\n<a href=\"https://www.eopedia.org\"><img id=\"img_comp-m5f8be491\" src=\"/assets/4adaa2e1382fcf9e083c.webp\" alt=\"eopedia_screenshot.jpeg\" loading=\"lazy\" decoding=\"async\"></a>\n<p>Haven't you searching around and crawling the internet before, for a specific bit of information from the EO domain. This happens to me several times even though Wikipedia exists. Wikipedia is intended for the broad audience and not for the EO community. The information I'm looking for is either buried below all other or not contained at all. This made me thought to start a wiki for us.</p>\n\n<p>The intention is not to have lengthy full-blown articles but to have articles which provide the most essential information in a nutshell and link to the best resources on the internet.</p>\n\n<p>If you want to take part and help others by sharing your knowledge, request an account.</p><p><a class=\"button\" href=\"https://www.eopedia.org/\">Visit EOpedia</a></p>",
+  "categories": [],
+  "source": "https://www.eomasters.org/knowledge/eopedia"
+}

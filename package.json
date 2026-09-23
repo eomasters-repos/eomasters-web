@@ -1,0 +1,9 @@
+{
+  "name": "eomasters-web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "EOMasters: a portable static website for GitHub Pages",
+  "engines": { "node": ">=22" },
+  "scripts": { "build": "node scripts/build.mjs", "start": "node scripts/serve.mjs", "test": "node --test scripts/site.test.mjs" }
+}

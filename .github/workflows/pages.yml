@@ -1,0 +1,46 @@
+name: Publish EOMasters
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          # Valid setup-node input; older IntelliJ action metadata can miss it.
+          # https://github.com/actions/setup-node/blob/v4/action.yml
+          # noinspection UndefinedParamsPresent
+          node-version: '22'
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+        id: pages
+      - name: Build website
+        run: npm run build
+        env:
+          BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          SITE_URL: ${{ steps.pages.outputs.origin }}${{ steps.pages.outputs.base_path }}
+          PREVIEW: ${{ vars.PAGES_PREVIEW || 'true' }}
+      - name: Check migration and internal links
+        run: npm test
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          # Valid upload-pages-artifact input; keep the suppression local.
+          # https://github.com/actions/upload-pages-artifact/blob/v3/action.yml
+          # noinspection UndefinedParamsPresent
+          path: dist
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
