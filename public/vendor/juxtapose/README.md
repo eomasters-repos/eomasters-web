@@ -11,6 +11,8 @@ Hosted locally without the hosted embed wrapper or its analytics.
 The upstream copyright and MPL-2.0 license are retained. The source is kept here
 so these small modifications can be reviewed against version 1.2.5:
 
+- Remove unused Flickr integration and its bundled API key. Image comparisons
+  use direct image URLs; Flickr photo-page URLs are no longer supported.
 - Use strict equality for comparisons with known types.
 - Return simple boolean expressions directly and remove the unused viewport helper.
 - Name vertical dimensions and shared before/after percentages consistently;

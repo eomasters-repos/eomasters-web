@@ -10,9 +10,6 @@
         OPTIMIZATION_WAS_CONSTRAINED: 2
     };
 
-    var flickr_key = "d90fc2d1f4acc584e08b8eaea5bf4d6c";
-    var FLICKR_SIZE_PREFERENCES = ['Large', 'Medium'];
-
     function Graphic(properties, slider) {
         var self = this;
         this.image = new Image();
@@ -28,78 +25,6 @@
         this.label = properties.label || false;
         this.credit = properties.credit || false;
     }
-
-    function FlickrGraphic(properties, slider) {
-        var self = this;
-        this.image = new Image();
-
-        this.loaded = false;
-        this.image.onload = function() {
-            self.loaded = true;
-            slider._onLoaded();
-        };
-
-        this.flickrID = this.getFlickrID(properties.src);
-        this.callFlickrAPI(this.flickrID, self);
-
-        this.label = properties.label || false;
-        this.credit = properties.credit || false;
-    }
-
-    FlickrGraphic.prototype = {
-        getFlickrID: function(url) {
-            if (url.match(/flic.kr\/.+/i)) {
-                var encoded = url.split('/').slice(-1)[0];
-                return base58Decode(encoded);
-            }
-            var idx = url.indexOf("flickr.com/photos/");
-            var pos = idx + "flickr.com/photos/".length;
-            var photo_info = url.substr(pos);
-            if (photo_info.indexOf('/') === -1) return null;
-            if (photo_info.indexOf('/') === 0) photo_info = photo_info.substr(1);
-            id = photo_info.split("/")[1];
-            return id;
-        },
-
-        callFlickrAPI: function(id, self) {
-            var url = 'https://api.flickr.com/services/rest/?method=flickr.photos.getSizes' +
-                '&api_key=' + flickr_key +
-                '&photo_id=' + id + '&format=json&nojsoncallback=1';
-
-            var request = new XMLHttpRequest();
-            request.open('GET', url, true);
-            request.onload = function() {
-                if (request.status >= 200 && request.status < 400) {
-                    data = JSON.parse(request.responseText);
-                    var flickr_url = self.bestFlickrUrl(data.sizes.size);
-                    self.setFlickrImage(flickr_url);
-                } else {
-                    console.error("There was an error getting the picture from Flickr");
-                }
-            };
-            request.onerror = function() {
-                console.error("There was an error getting the picture from Flickr");
-            };
-            request.send();
-        },
-
-        setFlickrImage: function(src) {
-            this.image.src = src;
-        },
-
-        bestFlickrUrl: function(ary) {
-            var dict = {};
-            for (var i = 0; i < ary.length; i++) {
-                dict[ary[i].label] = ary[i].source;
-            }
-            for (var j = 0; j < FLICKR_SIZE_PREFERENCES.length; j++) {
-                if (FLICKR_SIZE_PREFERENCES[j] in dict) {
-                    return dict[FLICKR_SIZE_PREFERENCES[j]];
-                }
-            }
-            return ary[0].source;
-        }
-    };
 
     function getNaturalDimensions(DOMelement) {
         if (DOMelement.naturalWidth && DOMelement.naturalHeight) {
@@ -184,33 +109,6 @@
         return pageY;
     }
 
-    function checkFlickr(url) {
-        if (url.match(/flic.kr\/.+/i)) {
-            return true;
-        }
-        var idx = url.indexOf("flickr.com/photos/");
-        return idx !== -1;
-    }
-
-    function base58Decode(encoded) {
-        var alphabet = '123456789abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ',
-            base = alphabet.length;
-        if (typeof encoded !== 'string') {
-            throw '"base58Decode" only accepts strings.';
-        }
-        var decoded = 0;
-        while (encoded) {
-            var alphabetPosition = alphabet.indexOf(encoded[0]);
-            if (alphabetPosition < 0) {
-                throw '"base58Decode" can\'t find "' + encoded[0] + '" in the alphabet: "' + alphabet + '"';
-            }
-            var powerOf = encoded.length - 1;
-            decoded += alphabetPosition * (Math.pow(base, powerOf));
-            encoded = encoded.substring(1);
-        }
-        return decoded.toString();
-    }
-
     function getLeftPercent(slider, input) {
         var leftPercent;
         if (typeof(input) === "string" || typeof(input) === "number") {
@@ -283,19 +181,8 @@
         }
 
         if (images.length === 2) {
-
-            if (checkFlickr(images[0].src)) {
-                this.imgBefore = new FlickrGraphic(images[0], this);
-            } else {
-                this.imgBefore = new Graphic(images[0], this);
-            }
-
-            if (checkFlickr(images[1].src)) {
-                this.imgAfter = new FlickrGraphic(images[1], this);
-            } else {
-                this.imgAfter = new Graphic(images[1], this);
-            }
-
+            this.imgBefore = new Graphic(images[0], this);
+            this.imgAfter = new Graphic(images[1], this);
         } else {
             console.warn("The images parameter takes two Image objects.");
         }
