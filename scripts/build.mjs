@@ -33,11 +33,24 @@ const social=({includeMedium=true,icons=false}={})=>`<div class="social-links">$
 const nav=(name,links)=>`<details class="nav-group"><summary>${name}</summary><div class="dropdown">${links.map(([t,h])=>`<a href="${h}">${t}</a>`).join('')}</div></details>`;
 const header=`<a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="wrap header-inner"><a class="brand" href="/"><img src="${b.logo}" width="85" height="85" alt="EOMasters superheroes"><span>EOMasters</span></a><div class="header-navigation"><nav class="main-nav" aria-label="Main navigation">${nav('Software',[['All software','/eom-software/'],['EOMasters Toolbox','/eom-software/eomtbx/'],['DAVALIEN','/eom-software/davalien/'],['Software & Training','/eom-software/service/']])}${nav('Knowledge',[['All resources','/knowledge/'],['Tutorials','/knowledge/tutorials/'],['EOpedia','/knowledge/eopedia/'],['Coastal Map','/knowledge/coastalmap/'],['EO Data DB','/eoddb/']])}${nav('Community',[['Community','/community/'],['Blog','/blog/'],['Newsletter archive','/newsletter-archive/'],['Testimonials','/testimonials/']])}</nav><nav class="header-social" aria-label="Social media">${social({includeMedium:false,icons:true})}</nav></div></div></header>`;
 const footer=`<footer class="site-footer"><div class="wrap"><div class="footer-main"><div><p class="footer-brand">EOMasters</p><p>Mastering Earth Observation.</p>${social({includeMedium:false})}</div><nav class="footer-links" aria-label="Footer"><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/imprint/">Imprint</a><a href="/terms-conditions/">Terms & Conditions</a><a href="/data-protection-policy-gdpr/">Privacy</a></nav></div><div class="footer-bottom"><span>© ${new Date().getFullYear()} Marco Peters</span><span>Contains modified Copernicus Sentinel data.</span></div></div></footer>`;
+// Apply the same external-link behaviour to navigation and imported content.
+function externalLinks(html){
+ const localHosts=new Set(['eomasters.org','www.eomasters.org',new URL(origin).hostname]);
+ return html.replace(/<a\b[^>]*>/gi,tag=>{
+  const href=tag.match(/\shref\s*=\s*(["'])(.*?)\1/i)?.[2];
+  if(!href || !/^(?:https?:)?\/\//i.test(href) || (URL.canParse(href,origin) && localHosts.has(new URL(href,origin).hostname))) return tag;
+  const rel=tag.match(/\srel\s*=\s*(["'])(.*?)\1/i)?.[2] || '';
+  const tokens=new Set(rel.split(/\s+/).filter(Boolean));
+  tokens.add('noopener');
+  return tag.replace(/\s(?:target|rel)\s*=\s*(["']).*?\1/gi,'').replace(/>$/,` target="_blank" rel="${[...tokens].join(' ')}">`);
+ });
+}
 const routes=[];
 function write(route,title,description,body,{article,cls='',noindex=false}={}){
  const url=origin+canonicalPath(route);const schema=article?`<script type="application/ld+json">${JSON.stringify({'@context':'https://schema.org','@type':'BlogPosting',headline:title,datePublished:article.date,dateModified:article.modified||article.date,author:{'@type':'Person',name:'Marco Peters'},mainEntityOfPage:url,url,...(article.image?{image:origin+article.image}:{})}).replaceAll('<','\\u003c')}</script>`:'';
  const comparisonAssets=body.includes('class="image-comparison"')?'<link rel="stylesheet" href="/vendor/juxtapose/juxtapose.css"><script src="/vendor/juxtapose/juxtapose.js" defer></script>':'';
  let html=`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>${e(title)}${title==='EOMasters | Mastering Earth Observation'?'':' | EOMasters'}</title><meta name="description" content="${e(description)}"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#242424"><link rel="canonical" href="${e(url)}"><meta property="og:title" content="${e(title)}"><meta property="og:description" content="${e(description)}"><meta property="og:type" content="${article?'article':'website'}"><meta property="og:url" content="${e(url)}"><meta name="referrer" content="strict-origin-when-cross-origin">${preview||noindex?'<meta name="robots" content="noindex, nofollow">':''}<link rel="icon" href="${b.logo}" type="image/webp">${comparisonAssets}<link rel="stylesheet" href="/styles.css"><script src="/site.js" defer></script>${schema}</head><body>${header}<main id="main" class="wrap ${cls}">${body}</main>${footer}</body></html>`;
+ html=externalLinks(html);
  html=html.replace(/(href|src)="\/(?!\/)([^"#]*)/g,(_,attr,p)=>`${attr}="${base}/${p}`);
  const dest=route==='/404.html'?path.join(out,'404.html'):path.join(out,route,'index.html');fs.mkdirSync(path.dirname(dest),{recursive:true});fs.writeFileSync(dest,html);routes.push({path:route,title,file:path.relative(out,dest)});
 }
@@ -57,7 +70,8 @@ write('/knowledge/tutorials','Tutorials','Video tutorials about SNAP, Earth obse
 for(const slug of ['/eom-software/eomtbx','/eom-software/davalien','/knowledge/eopedia','/knowledge/coastalmap','/testimonials','/imprint','/terms-conditions']){
  const p=pages[slug];let html=p.html.replace(/<h1\b[^>]*>[\s\S]*?<\/h1>/,'');
  html=html.replace(/ or post on the <a[^>]*>EOMasters forum<\/a>/g,'').replace('WSG84','WGS84');
- write(slug,p.title,p.description||text(html).slice(0,160),head(p.title,'',slug.startsWith('/eom-software')?'Software':slug.startsWith('/knowledge')?'Knowledge':'')+`<div class="prose">${html}</div>`);
+ const isToolbox=slug==='/eom-software/eomtbx';
+ write(slug,p.title,p.description||text(html).slice(0,160),head(p.title,'',slug.startsWith('/eom-software')?'Software':slug.startsWith('/knowledge')?'Knowledge':'')+`<div class="${isToolbox?'toolbox-showcase':'prose'}">${html}</div>`,{cls:isToolbox?'toolbox-page':''});
 }
 const privacy=fs.readFileSync(path.join(root,'content/privacy.html'),'utf8');
 write('/data-protection-policy-gdpr','Privacy policy','Privacy information for the EOMasters website.',head('Privacy policy')+`<div class="prose">${privacy}</div>`);

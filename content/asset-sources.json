@@ -311,5 +311,7 @@
   "https://static.wixstatic.com/media/6281da_82f1e64ab9fe4340a13fa707bd293c89~mv2.png": "/assets/654b632c23391ce304f5.webp",
   "https://static.wixstatic.com/media/6281da_eca5f872a14540f6b75d6053aeeb1caf~mv2.png": "/assets/5df318556860fd99ed65.webp",
   "https://static.wixstatic.com/media/6281da_d83aac5dcd374f26b77fa8007a4f5fc9~mv2.png": "/assets/sentinel-2-10m.png",
-  "https://static.wixstatic.com/media/6281da_3a9efa3c76b642b9b4af9df33402dcbf~mv2.png": "/assets/sentinel-2-5m.png"
+  "https://static.wixstatic.com/media/6281da_3a9efa3c76b642b9b4af9df33402dcbf~mv2.png": "/assets/sentinel-2-5m.png",
+  "https://step.esa.int/main/wp-content/help/versions/14.0.0/snap-community-plugins/org.eomasters.eomtbx/pages/spex/images/SpexProcParameters.png": "/assets/toolbox/spex-processor.png",
+  "https://step.esa.int/main/wp-content/help/versions/14.0.0/snap-community-plugins/org.eomasters.eomtbx/pages/assets/images/AssetLibrary_Overview.png": "/assets/toolbox/asset-library.png"
 }

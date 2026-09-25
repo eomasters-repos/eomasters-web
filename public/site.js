@@ -11,7 +11,7 @@ document.querySelectorAll('.nav-group').forEach(group => {
     if (group.open) document.querySelectorAll('.nav-group').forEach(other => { if (other !== group) other.open = false; });
   });
 });
-document.addEventListener('keydown', event => { if (event.key === 'Escape') document.querySelectorAll('details[open]').forEach(d => { d.open = false; d.querySelector('summary').focus(); }); });
+document.addEventListener('keydown', event => { if (event.key === 'Escape' && !document.querySelector('.image-viewer[open]')) document.querySelectorAll('details[open]').forEach(d => { d.open = false; d.querySelector('summary').focus(); }); });
 document.addEventListener('click', event => { if (!event.target.closest('.nav-group')) document.querySelectorAll('.nav-group').forEach(d => d.open = false); });
 
 const dbForm = document.querySelector('#db-filters');
@@ -60,3 +60,45 @@ document.querySelectorAll('.image-comparison').forEach(figure => {
     observer.observe(figure, {childList:true, subtree:true});
   }
 });
+
+// Keep the image links usable without JavaScript, then enhance them with a modal viewer.
+const screenshotLinks = document.querySelectorAll('a[data-image-viewer]');
+if (screenshotLinks.length) {
+  const viewer = document.createElement('dialog');
+  viewer.className = 'image-viewer';
+  viewer.setAttribute('aria-labelledby', 'image-viewer-title');
+  viewer.innerHTML = '<div class="image-viewer-toolbar"><h2 id="image-viewer-title">Screenshot viewer</h2><button type="button" autofocus aria-label="Close image viewer">Close</button></div><figure><img alt=""><figcaption></figcaption></figure>';
+  document.body.append(viewer);
+  const fullImage = viewer.querySelector('img');
+  const caption = viewer.querySelector('figcaption');
+  let opener;
+  screenshotLinks.forEach(link => {
+    link.setAttribute('aria-haspopup', 'dialog');
+    link.addEventListener('click', event => {
+      if (event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      opener = link;
+      fullImage.src = link.href;
+      fullImage.alt = link.querySelector('img').alt;
+      caption.textContent = link.closest('figure')?.querySelector('figcaption')?.textContent || fullImage.alt;
+      viewer.showModal();
+      document.documentElement.classList.add('image-viewer-open');
+    });
+  });
+  viewer.querySelector('button').addEventListener('click', () => viewer.close());
+  // Backdrop clicks dismiss the viewer; clicks inside the panel do not.
+  let backdropPointerDown = false;
+  const isOutside = event => {
+    const bounds = viewer.getBoundingClientRect();
+    return event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom;
+  };
+  viewer.addEventListener('pointerdown', event => { backdropPointerDown = isOutside(event); });
+  viewer.addEventListener('click', event => {
+    if (backdropPointerDown && isOutside(event)) viewer.close();
+    backdropPointerDown = false;
+  });
+  viewer.addEventListener('close', () => {
+    document.documentElement.classList.remove('image-viewer-open');
+    opener?.focus({preventScroll:true});
+  });
+}
