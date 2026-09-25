@@ -78,6 +78,7 @@ if (screenshotLinks.length) {
       if (event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
       event.preventDefault();
       opener = link;
+      viewer.querySelector('h2').textContent = link.dataset.viewerTitle || 'Screenshot viewer';
       fullImage.src = link.href;
       fullImage.alt = link.querySelector('img').alt;
       caption.textContent = link.closest('figure')?.querySelector('figcaption')?.textContent || fullImage.alt;
@@ -102,3 +103,71 @@ if (screenshotLinks.length) {
     opener?.focus({preventScroll:true});
   });
 }
+
+// Show all figures without JavaScript; enhance them into a manually controlled carousel.
+document.querySelectorAll('[data-carousel]').forEach(gallery => {
+  const slides = [...gallery.querySelectorAll('figure')];
+  if (slides.length < 2) return;
+  let current = 0;
+  gallery.setAttribute('role', 'region');
+  gallery.setAttribute('aria-roledescription', 'carousel');
+  slides.forEach((slide, index) => {
+    slide.setAttribute('role', 'group');
+    slide.setAttribute('aria-roledescription', 'slide');
+    slide.setAttribute('aria-label', `${index + 1} of ${slides.length}`);
+  });
+  const controls = document.createElement('div');
+  controls.className = 'carousel-controls';
+  const previous = document.createElement('button');
+  previous.type = 'button';
+  previous.textContent = 'Previous';
+  previous.setAttribute('aria-label', 'Previous map');
+  const status = document.createElement('p');
+  status.className = 'carousel-status';
+  status.setAttribute('role', 'status');
+  status.setAttribute('aria-live', 'polite');
+  status.setAttribute('aria-atomic', 'true');
+  const next = document.createElement('button');
+  next.type = 'button';
+  next.textContent = 'Next';
+  next.setAttribute('aria-label', 'Next map');
+  controls.append(previous, status, next);
+  const thumbnails = document.createElement('div');
+  thumbnails.className = 'carousel-thumbnails';
+  thumbnails.setAttribute('role', 'group');
+  thumbnails.setAttribute('aria-label', 'Choose a map');
+  const selectors = slides.map((slide, index) => {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.setAttribute('aria-label', `Show map ${index + 1}: ${slide.querySelector('strong').textContent}`);
+    button.setAttribute('aria-controls', slide.id);
+    const thumbnail = slide.querySelector('img').cloneNode();
+    thumbnail.alt = '';
+    button.append(thumbnail);
+    button.addEventListener('click', () => show(index));
+    thumbnails.append(button);
+    return button;
+  });
+  function show(index) {
+    const focusedImage = slides[current].contains(document.activeElement);
+    current = (index + slides.length) % slides.length;
+    slides.forEach((slide, i) => {
+      slide.hidden = i !== current;
+      selectors[i].setAttribute('aria-pressed', String(i === current));
+    });
+    status.textContent = `${current + 1} / ${slides.length}`;
+    status.setAttribute('aria-label', `Map ${current + 1} of ${slides.length}: ${slides[current].querySelector('strong').textContent}`);
+    if (focusedImage) slides[current].querySelector('a').focus({preventScroll:true});
+  }
+  previous.addEventListener('click', () => show(current - 1));
+  next.addEventListener('click', () => show(current + 1));
+  gallery.addEventListener('keydown', event => {
+    if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
+    if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+      event.preventDefault();
+      show(current + (event.key === 'ArrowRight' ? 1 : -1));
+    }
+  });
+  gallery.append(controls, thumbnails);
+  show(0);
+});
