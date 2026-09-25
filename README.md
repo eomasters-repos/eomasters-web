@@ -35,7 +35,7 @@ Repository: https://github.com/eomasters-repos/eomasters-web
 
 The existing repository already has **Settings → Pages → Source → GitHub Actions** selected. The included workflow builds, tests and deploys after a push to `main`, or on manual dispatch. It obtains the correct path prefix from GitHub Pages, so both the repository URL and a later custom domain work.
 
-The workflow defaults to a **public preview with noindex**. This is not access control. Set the repository Actions variable `PAGES_PREVIEW` to `false` and deploy again for the production launch. Keep it `true` while reviewing the replacement alongside Wix.
+The workflow builds in **production mode with search-engine indexing enabled** (`PREVIEW: 'false'`). No repository Actions variable is required. For a temporary build that requests no indexing, set `PREVIEW=true` in the build environment; this is not access control.
 
 Expected initial preview address after successful deployment:
 https://eomasters-repos.github.io/eomasters-web/
@@ -51,7 +51,7 @@ Keep the domain with its current provider. The registrar/DNS provider still need
 3. Set the Pages custom domain to `www.eomasters.org`, matching the existing site's canonical hostname.
 4. At the DNS provider, point `www` using CNAME to `eomasters-repos.github.io` and the apex domain using GitHub's documented A/AAAA records (or a supported ALIAS/ANAME).
 5. Preserve email-related MX/TXT records and other unrelated DNS entries.
-6. Enable HTTPS after GitHub finishes provisioning the certificate. Set `PAGES_PREVIEW=false` and redeploy so canonical URLs, sitemap and robots.txt use the production domain and indexing is enabled.
+6. Enable HTTPS after GitHub finishes provisioning the certificate. Redeploy after configuring the custom domain so canonical URLs and the sitemap use the production domain. Indexing is enabled by the workflow.
 7. Verify the apex/www redirect, several original article and newsletter URLs, assets and the EO filters before retiring Wix.
 
 The original `/post/<slug>` paths have been retained. Medium links therefore do not need changing when the same domain points to this website. Directory routes gain a trailing slash through GitHub Pages' normal directory handling. Old short URLs such as `/eomtbx` and `/davalien` have static HTML redirects. These optional HTML redirects are not configurable server-side 301 rules.

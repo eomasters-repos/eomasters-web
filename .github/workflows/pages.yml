@@ -32,7 +32,7 @@ jobs:
         env:
           BASE_PATH: ${{ steps.pages.outputs.base_path }}
           SITE_URL: ${{ steps.pages.outputs.origin }}${{ steps.pages.outputs.base_path }}
-          PREVIEW: ${{ vars.PAGES_PREVIEW || 'true' }}
+          PREVIEW: 'false'
       - name: Check migration and internal links
         run: npm test
       - uses: actions/upload-pages-artifact@v3
