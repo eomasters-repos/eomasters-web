@@ -21,3 +21,6 @@
 @media(max-width:700px){.header-navigation{width:100%;margin-left:0;align-items:stretch;gap:.25rem}.header-social .social-links{justify-content:flex-start;gap:1.15rem}.header-social a{min-height:44px}}
 
 .card-image-link{display:block}.card-image-link:focus-visible{outline-offset:-3px}
+
+/* Consistent, compact logos on the two software detail pages. */
+.prose img.software-logo{width:180px;height:180px;object-fit:contain;margin:1.8rem auto}
