@@ -12,3 +12,10 @@
 .image-comparison .jx-controller:focus-visible{outline:3px solid #fff;outline-offset:4px}
 .image-comparison figcaption{font-size:.85rem;text-align:center;color:var(--muted)}
 @media(max-width:480px){.image-comparison .jx-image .jx-label{font-size:11px;padding:.2em .4em}}
+
+/* Social profiles sit below the primary menu, alongside the brand. */
+.header-navigation{display:flex;flex-direction:column;align-items:flex-end;gap:.1rem;margin-left:auto}
+.header-social .social-links{gap:1.3rem;font-size:.82rem;color:var(--muted)}
+.header-social a{display:inline-flex;align-items:center;gap:.45rem;min-height:36px}
+.header-social svg{display:block;width:18px;height:18px;flex-shrink:0;fill:currentColor}
+@media(max-width:700px){.header-navigation{width:100%;margin-left:0;align-items:stretch;gap:.25rem}.header-social .social-links{justify-content:flex-start;gap:1.15rem}.header-social a{min-height:44px}}
