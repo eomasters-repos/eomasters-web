@@ -313,5 +313,17 @@
   "https://static.wixstatic.com/media/6281da_d83aac5dcd374f26b77fa8007a4f5fc9~mv2.png": "/assets/sentinel-2-10m.png",
   "https://static.wixstatic.com/media/6281da_3a9efa3c76b642b9b4af9df33402dcbf~mv2.png": "/assets/sentinel-2-5m.png",
   "https://step.esa.int/main/wp-content/help/versions/14.0.0/snap-community-plugins/org.eomasters.eomtbx/pages/spex/images/SpexProcParameters.png": "/assets/toolbox/spex-processor.png",
-  "https://step.esa.int/main/wp-content/help/versions/14.0.0/snap-community-plugins/org.eomasters.eomtbx/pages/assets/images/AssetLibrary_Overview.png": "/assets/toolbox/asset-library.png"
+  "https://step.esa.int/main/wp-content/help/versions/14.0.0/snap-community-plugins/org.eomasters.eomtbx/pages/assets/images/AssetLibrary_Overview.png": "/assets/toolbox/asset-library.png",
+  "https://static.wixstatic.com/media/6281da_06c053d7d909468ea8fee557714e9257~mv2.png": "/assets/sentinel-model-original.png",
+  "https://static.wixstatic.com/media/6281da_eb856cd205af4c34865ca312bd12a8ee~mv2.png": "/assets/sentinel-model-super-resolved.png",
+  "https://static.wixstatic.com/media/6281da_da2bfdcf7c9549f0b7a9841a01437c28~mv2.jpg": "/assets/b626137b1dd0caad6203.webp",
+  "https://static.wixstatic.com/media/6281da_da96f448d60940768b769aceb15106bd~mv2.jpg": "/assets/7eed1e47e4a52f3a5173.webp",
+  "https://static.wixstatic.com/media/6281da_9f8a160eb5a24e07bed3cd96cb22ffeb~mv2.png": "/assets/7549934f51bc4ed34175.webp",
+  "https://static.wixstatic.com/media/6281da_56a626ea708a4a4f95aadd25646daab7~mv2.png": "/assets/33b31f517b0cca477619.webp",
+  "https://static.wixstatic.com/media/6281da_7f5989613d134043b7a8600b6adb4acf~mv2.png": "/assets/012e6d5e51a2411a41fc.webp",
+  "https://static.wixstatic.com/media/6281da_bbb3421124a74ba7bfd84cde1f801043~mv2.png": "/assets/d1a6639c6db92f39eb0b.webp",
+  "https://static.wixstatic.com/media/6281da_be59bad51eca415dbef406096612963e~mv2.png": "/assets/a874080a9cd7020dc718.webp",
+  "https://static.wixstatic.com/media/6281da_643dea791ac5493fb6784c653fdb6746~mv2.png": "/assets/6eec283327dcf32c02f5.webp",
+  "https://static.wixstatic.com/media/6281da_911bc7a1b24c46859c31d518ce2681df~mv2.png": "/assets/0ba7c06f34b81461e90d.webp",
+  "https://static.wixstatic.com/media/6281da_dcd0947a741b4afa92daae2f57dfb380~mv2.png": "/assets/b77eea5b395cf18e7e21.webp"
 }
