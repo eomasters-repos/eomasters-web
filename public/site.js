@@ -1,3 +1,11 @@
+// Keep anchor targets clear of the sticky header, including after mobile wrapping.
+const siteHeader = document.querySelector('.site-header');
+if (siteHeader) {
+  const updateHeaderHeight = () => document.documentElement.style.setProperty('--header-height', siteHeader.getBoundingClientRect().height + 'px');
+  updateHeaderHeight();
+  new ResizeObserver(updateHeaderHeight).observe(siteHeader);
+}
+
 document.querySelectorAll('.nav-group').forEach(group => {
   group.addEventListener('toggle', () => {
     if (group.open) document.querySelectorAll('.nav-group').forEach(other => { if (other !== group) other.open = false; });
